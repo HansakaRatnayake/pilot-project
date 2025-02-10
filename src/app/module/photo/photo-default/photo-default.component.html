@@ -1,0 +1,22 @@
+<table class="table">
+  <thead>
+  <tr>
+    <th>AlbumId</th>
+    <th>Id</th>
+    <th>Title</th>
+    <th>Image</th>
+    <th>Thumbnail</th>
+  </tr>
+  </thead>
+
+  <tbody>
+  <tr *ngFor="let temp of photos">
+    <td>{{temp?.albumId}}</td>
+    <td>{{temp?.id}}</td>
+    <td>{{temp?.title}}</td>
+    <td><img src="{{temp?.url}}"></td>
+    <td><img src="{{temp?.thumbnailUrl}}"></td>
+  </tr>
+  </tbody>
+
+</table>

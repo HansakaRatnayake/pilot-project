@@ -1,0 +1,20 @@
+<table class="table">
+  <thead>
+  <tr>
+    <th>UserId</th>
+    <th>Id</th>
+    <th>Title</th>
+    <th>Body</th>
+  </tr>
+  </thead>
+
+  <tbody>
+  <tr *ngFor="let temp of posts">
+    <td>{{temp?.userId}}</td>
+    <td>{{temp?.id}}</td>
+    <td>{{temp?.title}}</td>
+    <td>{{temp?.body}}</td>
+  </tr>
+  </tbody>
+
+</table>
