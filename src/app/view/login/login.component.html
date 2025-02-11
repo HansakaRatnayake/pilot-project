@@ -3,12 +3,21 @@
 
 <hr>
 
-<div class="mb-3">
-  <label for="exampleFormControlInput1" class="form-label">Email address</label>
-  <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
-</div>
+
+<form [formGroup]="loginform" (ngSubmit)="loginWithEmail()">
+  <div class="mb-3">
+    <label for="exampleFormControlInput1" class="form-label">Email address</label>
+    <input formControlName="email" type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+  </div>
+  <br>
+  <div class="mb-3">
+    <label for="inputPassword" class="form-label">Password</label>
+    <input formControlName="password" type="password" id="inputPassword" class="form-control" aria-describedby="passwordHelpBlock">
+  </div>
+  <br>
+  <button class="btn-login" type="submit" >Login</button>
+  <button class="btn-google" type="button" (click)="loginWithGoogle()">Login with google</button>
+</form>
+
 <br>
-<div class="mb-3">
-  <label for="inputPassword" class="form-label">Password</label>
-  <input type="password" id="inputPassword" class="form-control" aria-describedby="passwordHelpBlock">
-</div>
+<p>If you haven't an account? <a routerLink="/signup">Signup here</a></p>

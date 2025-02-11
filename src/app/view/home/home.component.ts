@@ -4,13 +4,12 @@ import {CommentDto} from "../../core/dto/CommentDto";
 import {NgForOf} from "@angular/common";
 
 @Component({
-  selector: 'app-home',
-  standalone: true,
-  imports: [
-    NgForOf
-  ],
-  templateUrl: './home.component.html',
-  styleUrl: './home.component.scss'
+    selector: 'app-home',
+    imports: [
+        NgForOf
+    ],
+    templateUrl: './home.component.html',
+    styleUrl: './home.component.scss'
 })
 export class HomeComponent implements OnInit{
 

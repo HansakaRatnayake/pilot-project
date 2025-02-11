@@ -1,4 +1,13 @@
-<ul>
-  <li routerLinkActive="active" routerLink="/home">Home</li>
-  <li routerLinkActive="active" routerLink="/dashboard">Dashboard</li>
-</ul>
+<div>
+  <ul>
+    <li routerLinkActive="active" routerLink="/home">Home</li>
+    <li routerLinkActive="active" routerLink="/dashboard">Dashboard</li>
+  </ul>
+
+  <ul>
+    <li *ngIf="!isAuthenticated"><button class="btn-login" routerLink="/login">Login</button></li>
+    <li *ngIf="isAuthenticated"><button class="btn-logout" (click)="logout()">Logout</button></li>
+  </ul>
+
+</div>
+

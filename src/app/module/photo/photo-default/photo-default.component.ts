@@ -4,13 +4,12 @@ import {PhotoService} from "../../../core/service/photo/photo.service";
 import {NgForOf} from "@angular/common";
 
 @Component({
-  selector: 'app-photo-default',
-  standalone: true,
-  imports: [
-    NgForOf
-  ],
-  templateUrl: './photo-default.component.html',
-  styleUrl: './photo-default.component.scss'
+    selector: 'app-photo-default',
+    imports: [
+        NgForOf
+    ],
+    templateUrl: './photo-default.component.html',
+    styleUrl: './photo-default.component.scss'
 })
 export class PhotoDefaultComponent implements OnInit{
 

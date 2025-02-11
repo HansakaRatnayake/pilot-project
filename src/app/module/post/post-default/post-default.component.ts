@@ -4,13 +4,12 @@ import {PostDto} from "../../../core/dto/PostDto";
 import {NgForOf} from "@angular/common";
 
 @Component({
-  selector: 'app-post-default',
-  standalone: true,
-  imports: [
-    NgForOf
-  ],
-  templateUrl: './post-default.component.html',
-  styleUrl: './post-default.component.scss'
+    selector: 'app-post-default',
+    imports: [
+        NgForOf
+    ],
+    templateUrl: './post-default.component.html',
+    styleUrl: './post-default.component.scss'
 })
 export class PostDefaultComponent implements OnInit{
 

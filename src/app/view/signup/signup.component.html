@@ -1,1 +1,28 @@
-<p>signup works!</p>
+<h2>System SignUp</h2>
+<p>SingUp to system for access the dashboard</p>
+
+<hr>
+
+
+<form [formGroup]="signupform" (ngSubmit)="signUp()">
+  <div class="mb-3">
+    <label for="exampleFormControlInput1" class="form-label">Email address</label>
+    <input formControlName="email" type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+  </div>
+  <br>
+  <div class="mb-3">
+    <label for="inputPassword" class="form-label">Password</label>
+    <input formControlName="password" type="password" id="inputPassword" class="form-control" aria-describedby="passwordHelpBlock">
+  </div>
+  <br>
+  <div class="mb-3">
+    <label for="inputPassword" class="form-label">Confirm Password</label>
+    <input formControlName="confirmPassword" type="password" id="confirmPassword" class="form-control" aria-describedby="passwordHelpBlock">
+  </div>
+  <br>
+  <button class="btn-signup" type="submit" >SignUp</button>
+  <button class="btn-google" type="button" (click)="signUpWithGoogle()">SignUp with google</button>
+</form>
+
+<br>
+<p>Already have an account? <a routerLink="/login">Login here</a></p>
